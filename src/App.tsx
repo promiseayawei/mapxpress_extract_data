@@ -108,6 +108,7 @@ export default function App() {
               const text = result.candidates[0].content.parts[0].text.trim();
               setExtractedData(text);
 
+              
               // ✅ Parse CSV string into array
               const rows = text.split("\n").map((row: string) => row.split(","));
 
